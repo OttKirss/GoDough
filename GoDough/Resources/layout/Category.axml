@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:id="@+id/spinner1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="Add category"
+            android:layout_width="187.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Add" />
+        <Button
+            android:text="Delete category(Selected)"
+            android:layout_width="193.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Delete" />
+    </LinearLayout>
+  <EditText
+      android:id="@+id/edittext"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"/>
+</LinearLayout>

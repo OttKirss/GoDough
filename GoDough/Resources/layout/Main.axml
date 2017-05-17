@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Balance left: 0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BalLeft"
+        android:gravity="center" />
+    <Button
+        android:text="Add category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toGategory" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:layout_width="186.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toGraph"
+            android:text="See graph" />
+        <Button
+            android:text="Make transactions"
+            android:layout_width="193.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toTransactions" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="187.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3"
+            android:layout_marginTop="47.0dp">
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/balNumber"
+                android:layout_marginTop="323.0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="178.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4"
+            android:layout_marginTop="238.5dp">
+            <Button
+                android:layout_width="186.5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:layout_marginTop="126.0dp"
+                android:text="Add your balance" />
+        </LinearLayout>
+    </LinearLayout>
+    <OxyPlot.Xamarin.Android.PlotView
+        android:id="@+id/plot_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
