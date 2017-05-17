@@ -13,7 +13,7 @@ namespace GoDough
         {
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.Main);
-
+            //ff
             var balanceleft = FindViewById<TextView>(Resource.Id.BalLeft);
             var toCategory = FindViewById<Button>(Resource.Id.toGategory);
             var toGraph = FindViewById<Button>(Resource.Id.toGraph);
